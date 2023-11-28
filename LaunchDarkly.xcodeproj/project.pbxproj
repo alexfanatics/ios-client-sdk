@@ -918,7 +918,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8354EFD61F22491C00C05156 /* Build configuration list for PBXNativeTarget "LaunchDarkly_iOS" */;
 			buildPhases = (
-				835E1CFE1F61AC0600184DB4 /* Run Script */,
 				8354EFBD1F22491C00C05156 /* Sources */,
 				8354EFBE1F22491C00C05156 /* Frameworks */,
 				8354EFBF1F22491C00C05156 /* Headers */,
@@ -1150,21 +1149,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which mint >/dev/null; then\n  /usr/bin/xcrun --sdk macosx mint run krzysztofzablocki/Sourcery\nelse\n  echo \"warning: mint not installed, available from https://github.com/yonaskolb/Mint\"\nfi\n";
-		};
-		835E1CFE1F61AC0600184DB4 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which mint >/dev/null; then\n  /usr/bin/xcrun --sdk macosx mint run realm/SwiftLint\nelse\n  echo \"warning: mint not installed, available from https://github.com/yonaskolb/Mint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
